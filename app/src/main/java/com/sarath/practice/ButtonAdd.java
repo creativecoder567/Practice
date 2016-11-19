@@ -14,7 +14,7 @@ import android.widget.Toast;
  * Created by sarath on 11/5/2016.
  */
 
-public class Button extends AppCompatActivity {
+public class ButtonAdd extends AppCompatActivity {
     private EditText editText1,editText2;
     private android.widget.Button btnsum;
     private TextView tv;

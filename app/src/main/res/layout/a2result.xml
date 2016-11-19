@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Enter Message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="46dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="191dp"
+        android:id="@+id/tva2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/eta2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_alignBaseline="@+id/tva2"
+        android:layout_alignBottom="@+id/tva2"
+        android:layout_toRightOf="@+id/tva2"
+        android:layout_toEndOf="@+id/tva2" />
+
+    <Button
+        android:text="Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btna2"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/eta2"
+        android:layout_alignStart="@+id/eta2" />
+</RelativeLayout>

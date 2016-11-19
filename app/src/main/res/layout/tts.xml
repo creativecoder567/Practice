@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:hint="Enter Text Here...!!!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/etText" />
+
+    <Button
+        android:onClick="onClick"
+        android:text="Speak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:id="@+id/btnSpeech" />
+
+    <TextView
+        android:hint="Read the Text Here!!!"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="59dp"
+        android:id="@+id/tvOutput" />
+
+    <Button
+        android:onClick="onClick"
+        android:text="Record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvOutput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="102dp"
+        android:id="@+id/btnRec" />
+
+</RelativeLayout>

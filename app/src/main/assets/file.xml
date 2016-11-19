@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<records>
+    <employee>
+        <name>sarath kumar</name>
+        <salary>10000</salary>
+    </employee>
+    <employee>
+        <name>vinoth kumar</name>
+        <salary>20000</salary>
+    </employee>
+    <employee>
+        <name>Ranjith kumar</name>
+        <salary>30000</salary>
+    </employee>
+    <employee>
+        <name>Triveni</name>
+        <salary>40000</salary>
+    </employee>
+    <employee>
+        <name>Ravi</name>
+        <salary>50000</salary>
+    </employee>
+</records>
+</resources>

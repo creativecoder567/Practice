@@ -16,13 +16,23 @@ public class HandleEvent extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.handle);
-        Button clickMe =(Button)findViewById(R.id.btnClickMe);
+        Button clickMe = (Button) findViewById(R.id.btnClickMe);
 
-        clickMe.setOnClickListener(new Button.OnClickListener(){
-            public  void onClick(View view){
-                TextView myText =(TextView)findViewById(R.id.tvHello);
+        clickMe.setOnClickListener(new Button.OnClickListener() {
+            public void onClick(View view) {
+                TextView myText = (TextView) findViewById(R.id.tvHello);
                 myText.setText("Event is handled on text");
             }
         });
+
+        clickMe.setOnLongClickListener(new Button.OnLongClickListener() {
+            public boolean onLongClick(View view) {
+                TextView myText = (TextView) findViewById(R.id.tvHello);
+                myText.setText("you pressed long click");
+                return false;
+
+            }
+        });
+
     }
 }
