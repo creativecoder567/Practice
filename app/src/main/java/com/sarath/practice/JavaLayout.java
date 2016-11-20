@@ -30,5 +30,15 @@ public class JavaLayout extends AppCompatActivity {
         linearLayout.setLayoutParams(dimensions);
 
         ViewGroup.LayoutParams viewDimensions = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
+        textView.setLayoutParams(viewDimensions);
+        button.setLayoutParams(viewDimensions);
+
+        linearLayout.setOrientation(LinearLayout.VERTICAL);
+        textView.setText("This is done in java");
+        button.setText("Touch it");
+
+        linearLayout.addView(textView);
+        linearLayout.addView(button);
+        setContentView(linearLayout);
     }
 }

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D47A1">
+<TextView
+    android:textSize="30sp"
+    android:textStyle="bold"
+    android:textColor="@color/whitetext"
+    android:id="@+id/tvFacebook"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:gravity="center"
+    android:text="facebook"/>
+<TextView
+    android:textColor="@color/whitetext"
+    android:id="@+id/tvEmail"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_below="@id/tvFacebook"
+    android:text="Email:"/>
+<EditText
+    android:background="@color/whitetext"
+    android:id="@+id/etEmail"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_below="@id/tvEmail"/>
+    <TextView
+        android:textColor="@color/whitetext"
+        android:id="@+id/tvPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/etEmail"
+        android:text="Password"/>
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/whitetext"
+        android:inputType="textPassword"
+        android:layout_below="@id/tvPassword"/>
+<CheckBox
+    android:textColor="@color/whitetext"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/etPassword"
+    android:checked="true"
+    android:text="Save Login"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:textColor="@color/whitetext"
+    android:text="Need an Account?\n sign up using your phone"
+    android:gravity="center"/>
+</RelativeLayout>
