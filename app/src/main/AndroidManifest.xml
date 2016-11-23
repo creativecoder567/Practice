@@ -56,7 +56,7 @@
         </activity>
         <activity android:name=".ToastImage">
         </activity>
-        <activity android:name=".JavaRelative">
+        <activity android:name=".FrameLayoutExample">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
