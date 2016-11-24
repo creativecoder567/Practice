@@ -56,7 +56,7 @@
         </activity>
         <activity android:name=".ToastImage">
         </activity>
-        <activity android:name=".CheckBoxTest">
+        <activity android:name=".ListActivity1">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
