@@ -18,8 +18,6 @@ public class ListActivity1 extends ListActivity {
     ListView listView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.list_view1);
         listView = getListView();
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,days);
         listView.setAdapter(arrayAdapter);
@@ -28,6 +26,7 @@ public class ListActivity1 extends ListActivity {
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
         TextView textView = (TextView) v;
+        setContentView(R.layout.list_view1);
         Toast.makeText(this, ""+textView.getText()+" "+position, Toast.LENGTH_SHORT).show();
     }
 }
