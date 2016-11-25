@@ -16,4 +16,28 @@
 
     <string name="action_share">Share</string>
     <string name="action_reply">Reply</string>
+    <string-array name="titles">
+        <item>smiley 1</item>
+        <item>smiley 2</item>
+        <item>smiley 3</item>
+        <item>smiley 4</item>
+        <item>smiley 5</item>
+        <item>smiley 6</item>
+        <item>smiley 7</item>
+        <item>smiley 8</item>
+        <item>smiley 9</item>
+        <item>smiley 10</item>
+    </string-array>
+    <string-array name="description">
+        <item>smiley description 1</item>
+        <item>smiley description 2</item>
+        <item>smiley description 3</item>
+        <item>smiley description 4</item>
+        <item>smiley description 5</item>
+        <item>smiley description 6</item>
+        <item>smiley description 7</item>
+        <item>smiley description 8</item>
+        <item>smiley description 9</item>
+        <item>smiley description 10</item>
+    </string-array>
 </resources>
