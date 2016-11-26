@@ -40,4 +40,13 @@
         <item>smiley description 9</item>
         <item>smiley description 10</item>
     </string-array>
+    <string-array name="days">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thurday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
 </resources>
