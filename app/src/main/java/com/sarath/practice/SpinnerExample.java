@@ -1,5 +1,8 @@
 package com.sarath.practice;
 
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
+import android.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -14,7 +17,7 @@ import android.widget.Toast;
  * Created by sarath on 11/26/2016.
  */
 
-public class SpinnerExample extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
+public class SpinnerExample extends AppCompatActivity implements AdapterView.OnItemSelectedListener,Communicator{
     Spinner spinner;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -25,6 +28,12 @@ public class SpinnerExample extends AppCompatActivity implements AdapterView.OnI
         ArrayAdapter arrayAdapter =ArrayAdapter.createFromResource(this,R.array.days,android.R.layout.simple_spinner_item);
         spinner.setAdapter(arrayAdapter);
         spinner.setOnItemSelectedListener(this);
+
+        /*MyFragment fragment = new MyFragment();
+        FragmentManager fragmentManager = getFragmentManager();
+        FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
+        fragmentTransaction.add(R.id.spinnerLayout,fragment,"");
+        fragmentTransaction.commit();*/
     }
 
     @Override
@@ -36,5 +45,12 @@ public class SpinnerExample extends AppCompatActivity implements AdapterView.OnI
     @Override
     public void onNothingSelected(AdapterView<?> adapterView) {
 
+    }
+
+    @Override
+    public void respond(String data) {
+      FragmentManager fragmentManager = getFragmentManager();
+        FragmentB fragmentB = (FragmentB) fragmentManager.findFragmentById(R.id.fragB);
+        fragmentB.changeText(data);
     }
 }
