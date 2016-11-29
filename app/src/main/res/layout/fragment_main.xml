@@ -13,10 +13,17 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/fragB"/>-->
-    <fragment
+    <!--<fragment
         android:name="com.sarath.practice.MyListFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/fragMyList"/>
+        android:id="@+id/fragMyList"/>-->
+    <Button
+        android:text="ShowDialog"
+        android:onClick="showDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnShowDialog"
+        />
 
 </LinearLayout>

@@ -8,12 +8,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 /**
  * Created by sarath on 11/29/2016.
  */
 
-public class FragmentMain extends AppCompatActivity implements Communicator {
+public class FragmentMain extends AppCompatActivity implements MyDialog.communicator {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -22,10 +23,22 @@ public class FragmentMain extends AppCompatActivity implements Communicator {
 
     }
 
-    @Override
+    /*@Override
     public void respond(int i) {
         FragmentManager fragmentManager = getFragmentManager();
         FragmentB fragmentB = (FragmentB) fragmentManager.findFragmentById(R.id.fragB);
         fragmentB.changeData(i);
+    }*/
+    public void showDialog(View view){
+
+        FragmentManager fragmentManager = getFragmentManager();
+        MyDialog myDialog =new MyDialog();
+        myDialog.show(fragmentManager,"MyDialog");
+    }
+
+    @Override
+    public void onDialogmessage(String message) {
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+
     }
 }
