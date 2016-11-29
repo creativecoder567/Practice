@@ -56,7 +56,7 @@
         </activity>
         <activity android:name=".ToastImage">
         </activity>
-        <activity android:name=".SpinnerExample">
+        <activity android:name=".FragmentMain">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

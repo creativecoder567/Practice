@@ -17,7 +17,7 @@ import android.widget.Toast;
  * Created by sarath on 11/26/2016.
  */
 
-public class SpinnerExample extends AppCompatActivity implements AdapterView.OnItemSelectedListener,Communicator{
+public class SpinnerExample extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
     Spinner spinner;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -47,10 +47,10 @@ public class SpinnerExample extends AppCompatActivity implements AdapterView.OnI
 
     }
 
-    @Override
+    /*@Override
     public void respond(String data) {
       FragmentManager fragmentManager = getFragmentManager();
         FragmentB fragmentB = (FragmentB) fragmentManager.findFragmentById(R.id.fragB);
         fragmentB.changeText(data);
-    }
+    }*/
 }
