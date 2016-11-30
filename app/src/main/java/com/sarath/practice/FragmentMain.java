@@ -14,7 +14,7 @@ import android.widget.Toast;
  * Created by sarath on 11/29/2016.
  */
 
-public class FragmentMain extends AppCompatActivity implements MyDialog.communicator {
+public class FragmentMain extends AppCompatActivity /*implements MyDialog.communicator*/ {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -39,9 +39,9 @@ public class FragmentMain extends AppCompatActivity implements MyDialog.communic
         myDialog.show(fragmentManager,"MyDialog");*/
     }
 
-    @Override
+   /* @Override
     public void onDialogmessage(String message) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
 
-    }
+    }*/
 }
