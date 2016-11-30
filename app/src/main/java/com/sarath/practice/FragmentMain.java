@@ -2,6 +2,7 @@ package com.sarath.practice;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -37,6 +38,13 @@ public class FragmentMain extends AppCompatActivity /*implements MyDialog.commun
         /*FragmentManager fragmentManager = getFragmentManager();
         MyDialog myDialog =new MyDialog();
         myDialog.show(fragmentManager,"MyDialog");*/
+    }
+    public void showFragment(View view){
+        MyAlert myAlert = new MyAlert();
+        FragmentManager fragmentManager = getFragmentManager();
+        FragmentTransaction transaction = fragmentManager.beginTransaction();
+        transaction.add(R.id.group,myAlert,"My Alert Fragment");
+        transaction.commit();
     }
 
    /* @Override

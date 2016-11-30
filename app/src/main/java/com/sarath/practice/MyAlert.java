@@ -5,8 +5,10 @@ import android.app.Dialog;
 import android.app.DialogFragment;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Toast;
 
 /**
@@ -14,7 +16,7 @@ import android.widget.Toast;
  */
 
 public class MyAlert extends DialogFragment {
-    @Override
+    /*@Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         AlertDialog.Builder builder =  new AlertDialog.Builder(getActivity());
         LayoutInflater layoutInflater = getActivity().getLayoutInflater();
@@ -35,8 +37,13 @@ public class MyAlert extends DialogFragment {
         Dialog dialog = builder.create();
         return dialog;
     }
-
-     /*builder.setItems(R.array.days, new DialogInterface.OnClickListener() {
+*/
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.my_alert,null);
+    }
+    /*builder.setItems(R.array.days, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 Toast.makeText(getActivity(), "Item was clicked "+i, Toast.LENGTH_SHORT).show();
