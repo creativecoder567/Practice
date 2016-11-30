@@ -31,9 +31,12 @@ public class FragmentMain extends AppCompatActivity implements MyDialog.communic
     }*/
     public void showDialog(View view){
 
-        FragmentManager fragmentManager = getFragmentManager();
+        MyAlert myalert = new MyAlert();
+        myalert.show(getFragmentManager(),"MyAlert");
+
+        /*FragmentManager fragmentManager = getFragmentManager();
         MyDialog myDialog =new MyDialog();
-        myDialog.show(fragmentManager,"MyDialog");
+        myDialog.show(fragmentManager,"MyDialog");*/
     }
 
     @Override
