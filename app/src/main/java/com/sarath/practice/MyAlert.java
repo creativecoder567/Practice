@@ -36,18 +36,7 @@ public class MyAlert extends DialogFragment {
         return dialog;
     }
 
-    /*
-    @Override
-    public Dialog onCreateDialog(Bundle savedInstanceState) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-        builder.setTitle("My Dialog");
-        builder.setMultiChoiceItems(R.array.days, null, new DialogInterface.OnMultiChoiceClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i, boolean b) {
-                Toast.makeText(getActivity(), "Item from position "+i+ " is selected "+b, Toast.LENGTH_SHORT).show();
-            }
-        });
-        *//*builder.setItems(R.array.days, new DialogInterface.OnClickListener() {
+     /*builder.setItems(R.array.days, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 Toast.makeText(getActivity(), "Item was clicked "+i, Toast.LENGTH_SHORT).show();
