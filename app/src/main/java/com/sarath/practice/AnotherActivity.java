@@ -11,6 +11,10 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
 /**
  * Created by sarath on 12/1/2016.
  */
@@ -29,8 +33,19 @@ public class AnotherActivity extends AppCompatActivity {
         etUser = (EditText) findViewById(R.id.etUser1);
         etPassword = (EditText) findViewById(R.id.etPass1);
     }
-    public void load(View view){
-        SharedPreferences sharedpref = getSharedPreferences("MyData", Context.MODE_PRIVATE);
+    public void load(View view) throws IOException {
+        FileInputStream fileInputStream=openFileInput("sarath.txt");
+        StringBuffer stringBuffer = new StringBuffer();
+        int read;
+        read=-1;
+        while ((read =fileInputStream.read())!=-1);{
+         stringBuffer.append((char)read);
+        }
+        String username = stringBuffer.substring(0,stringBuffer.indexOf(" "));
+        String password = stringBuffer.substring(stringBuffer.indexOf(" ")+1);
+        etUser.setText(username);
+        etPassword.setText(password);
+        /*SharedPreferences sharedpref = getSharedPreferences("MyData", Context.MODE_PRIVATE);
         String name=sharedpref.getString("name","DEFAULT ");
         String password=sharedpref.getString("password","DEFAULT ");
         if(name.equals(DEFAULT)||password.equals(DEFAULT)){
@@ -40,7 +55,7 @@ public class AnotherActivity extends AppCompatActivity {
             etUser.setText(name);
             etPassword.setText(password);
         }
-
+*/
     }
     public  void previous(View view){
         Toast.makeText(this, "previous", Toast.LENGTH_SHORT).show();
