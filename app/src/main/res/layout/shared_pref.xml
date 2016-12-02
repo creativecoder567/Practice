@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="40dp"
+        android:text="UserName:"
+        android:textStyle="bold"
+        android:textAppearance="?attr/textAppearanceLargePopupMenu"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvUser1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text=""
+        android:ems="10"
+        android:id="@+id/etUser1"
+        android:layout_alignBaseline="@+id/tvUser1"
+        android:layout_alignBottom="@+id/tvUser1"
+        android:layout_toRightOf="@+id/tvUser1"
+        android:layout_toEndOf="@+id/tvUser1" />
+
+    <TextView
+        android:text="Password:"
+        android:textStyle="bold"
+        android:textAppearance="?attr/textAppearanceLargePopupMenu"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPass1"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/etUser1"
+        android:layout_toLeftOf="@+id/etUser1"
+        android:layout_toStartOf="@+id/etUser1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text=""
+        android:ems="10"
+        android:id="@+id/etPass1"
+        android:layout_alignBaseline="@+id/tvPass1"
+        android:layout_alignBottom="@+id/tvPass1"
+        android:layout_toRightOf="@+id/tvPass1"
+        android:layout_toEndOf="@+id/tvPass1" />
+
+    <Button
+        android:onClick="save"
+        android:text="Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginStart="48dp"
+        android:id="@+id/btnSave"
+        android:layout_alignBaseline="@+id/btnGoToAnother"
+        android:layout_alignBottom="@+id/btnGoToAnother"
+        android:layout_alignLeft="@+id/tvPass1"
+        android:layout_alignStart="@+id/tvPass1" />
+
+    <Button
+        android:onClick="next"
+        android:text="GoToAnother"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnGoToAnother"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/etPass1"
+        android:layout_alignRight="@+id/etPass1"
+        android:layout_alignEnd="@+id/etPass1" />
+</RelativeLayout>
