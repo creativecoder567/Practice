@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/etCacheName2"/>
+<TextView
+    android:text="Data loaded... "
+    android:textStyle="bold"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tvCacheName"/>
+<Button
+    android:onClick="loadInternalCache"
+    android:id="@+id/btnLoadInternal"
+    android:text="Load From Internal Cache"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <Button
+        android:onClick="loadExternalCache"
+        android:id="@+id/btnLoadExternal"
+        android:text="Load From External Cache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:onClick="loadExternalPrivate"
+        android:id="@+id/btnLoadPrivate"
+        android:text="Load From External Private"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:onClick="loadExternalPublic"
+        android:id="@+id/btnLoadPublic"
+        android:text="Load From External Public"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:onClick="loadPrevious"
+        android:id="@+id/btnCachePrevious"
+        android:text="Previous"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

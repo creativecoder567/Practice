@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Enter User Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCacheName"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etCacheName"/>
+    <Button
+        android:onClick="saveInternalCache"
+        android:text="Internal Cache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnInternalCache"/>
+    <Button
+        android:onClick="saveExternalCache"
+        android:text="External Cache"
+        android:id="@+id/btnExternalCache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:onClick="saveExternalPrivate"
+        android:text="External Private"
+        android:id="@+id/btnExternalPrivate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:onClick="saveExternalPublic"
+        android:id="@+id/btnExternalPublic"
+        android:text="External public"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:onClick="NextActivity"
+        android:id="@+id/btnNextActivity"
+        android:text="Next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
