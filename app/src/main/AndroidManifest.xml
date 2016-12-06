@@ -43,7 +43,7 @@
         <activity android:name=".ToastImage"></activity>
         <activity android:name=".AnotherActivity"></activity>
         <activity android:name=".CacheSecondActivity"></activity>
-        <activity android:name=".CacheMain">
+        <activity android:name=".ShareApp1">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
