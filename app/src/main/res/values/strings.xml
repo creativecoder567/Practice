@@ -55,6 +55,23 @@
         <item>Shakthiman</item>
         <item>Spiderman</item>
     </string-array>
+    <string-array name="urls">
+        <item>Image 1</item>
+        <item>Image 2</item>
+        <item>Image 3</item>
+        <item>Image 4</item>
+        <item>Image 5</item>
+        <item>Image 6</item>
+    </string-array>
+    <string-array name="imageUrls">
+        <item>http://www.google.com</item>
+        <item>htttp://facebook.com</item>
+        <item>http://yahoo.com</item>
+        <item>http://youtube.com</item>
+        <item>http://pinterest.com</item>
+        <item>http://felight.com</item>
+
+    </string-array>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
